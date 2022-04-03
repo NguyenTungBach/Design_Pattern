@@ -1,21 +1,13 @@
 package Refactor.ModeFacade;
 
 import Refactor.Action;
-import Refactor.Entity.Customer;
-import Refactor.Entity.Staff;
-import Refactor.Entity.Vehicle;
 import Refactor.ModelObserver.ModelIObserver;
 
 import java.util.ArrayList;
 
 public class ModelFacade implements ModelIFacade{
     public static Action action;
-//    private static Staff staff = new Staff();
-//    private static Vehicle vehicle = new Vehicle();
-//    private static Customer customer = new Customer();
-//    private ArrayList<Staff> listStaff;
-//    private ArrayList<Customer> listCustomer;
-//    private ArrayList<Vehicle> listVehicle;
+
     private ArrayList<ModelIObserver> listObserver;
     private int mainState;
     @Override
